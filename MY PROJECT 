@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Verification</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Biometric Attendance</h1>
+
+    <div class="session">
+
+        <label>Course</label>
+        <select>
+            <option>CSC 301 - Data Structures</option>
+            <option>MTH 201 - Calculus II</option>
+            <option>PHY 101 - Mechanics</option>
+        </select>
+
+        <label>Lecturer</label>
+        <input type="text" value="Dr. John Doe" readonly>
+
+        <button class="start-btn">Start Attendance</button>
+
+    </div>
+
+    <div class="scanner">
+
+        <h2>Fingerprint Verification</h2>
+
+        <div class="finger-box">
+            <p>Place your finger on the DigitalPersona scanner</p>
+        </div>
+
+        <button id="verifyBtn">Verify Fingerprint</button>
+
+        <p id="status">Waiting for student...</p>
+
+    </div>
+
+    <div class="result">
+
+        <h2>Student Details</h2>
+
+        <img src="user.png" alt="Student Photo">
+
+        <p><strong>Name:</strong> --</p>
+        <p><strong>Matric Number:</strong> --</p>
+        <p><strong>Department:</strong> --</p>
+        <p><strong>Course:</strong> --</p>
+
+    </div>
+
+</div>
+
+<script src="attendance.js"></script>
+
+</body>
+</html>
